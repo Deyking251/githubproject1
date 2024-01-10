@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        #tig1{
+            background-image: Url(background.png); 
+            background-size: cover;
+            min-height: 900px;
+            min-width: 800px;
+        }
+        #tig2{
+            
+            background-size: cover;
+            max-width:2000px;
+            min-height:800px;
+        }
+        #tig3{
+            
+            background-size: cover;
+            background-position: left;
+            max-width: auto;
+            min-height: 1000px;
+            float: right;
+            position: relative;
+        }
+        #tig4{
+            background-image:url(offer.png);
+            background-repeat: no-repeat;
+  background-size: 900px 800px;
+  background-position: left; 
+  min-width: 1300px;
+  min-height: 1000px;
+        }
+        #tig5{
+            background-image:url(contact.png);
+            background-repeat: no-repeat;
+  background-size: 800px 600px;
+  background-position: right; 
+  min-width: 1300px;
+  min-height: 1000px;
+        }
+            .row::after {
+  content: "";
+  clear:both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px hidden;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;
+
+}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+input[type=text],input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #cf7e7e;
+  box-sizing: border-box;
+}
+.grid-container {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  border: 1px hidden;
+  padding: 20px;
+  
+  text-align: center;
+}
+.grid-item>h5{
+    color:blueviolet;
+}
+    </style>
+</head>
+<body>
+   
+    <div  class="container-fluid" id="tig1">
+        <header style="display:flex; justify-content: space-between;">
+            <div class=""><img src="logo.png" alt="" style="max-height: 80px;max-width: 80px;"></div>
+            <div class=""><img src="menu.png" alt="" style="max-height: 50px;max-width: 50px; padding-top: 10px;"></div>
+        </header>
+    <div class="row" style="padding-top: 170px;padding-left: 30px;">
+        <div class="col-3">
+            <h2>The purpose is to teach,bring learning to the people</h2>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi perspiciatis quo facere magnam hic eos accusantium impedit odio inventore deserunt temporibus asperiores laborum aliquam nam voluptatem, voluptas mollitia expedita. <span id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quis, commodi repudiandae illo suscipit eligendi rem natus dicta quos ad beatae molestias nisi quae laboriosam fugiat? Quis id est ipsam? Neque quasi deleniti autem doloremque doloribus corporis placeat ipsum voluptatem molestiae ab temporibus cupiditate eius ex, tempore et dolore explicabo?</span></p>
+            <button class="btn btn-danger" onclick="myFunction()" id="myBtn">Read more</button>
+        </div>
+    </div>
+    <footer></footer>
+    </div>
+    <hr>
+    <div class="container-fluid" id="tig2">
+        
+        <div class="row" style="padding-right: 30px;">
+            <div class="col-9"><img src="about.png" alt="" style="max-height: 800px;max-width: 900px;"></div>
+            <div class="col-3" style="padding-top: 170px;"><div><h1>About us</h1>
+            <p style="text-align: justify;padding-top: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis similique cumque cum voluptatem amet! Nisi alias voluptatibus sit? Placeat expedita, eum obcaecati similique rerum aspernatur, et, tempore nulla at illo perspiciatis ea reprehenderit! Praesentium, ipsa molestias veniam non deserunt quasi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quo perspiciatis sunt ullam expedita, aliquid doloribus repellat possimus voluptatum, nihil nam! Laborum, atque. Ratione corporis ab non sunt aperiam veniam!</p></div>
+                <div>
+                    <h3 style="text-align:right;">"Learning is not chance attained by chance, if must be sought for with ardor and attended to with dilligence"</h3>
+                    <p style="text-align:right;">-- Abegaril Adams</p>
+                </div>
+        </div>
+        </div>
+        <footer style="display:flex; justify-content: space-evenly;">
+        <div><div><img src="pic-1.png" style="max-height: 100px; max-width: 100px;"></div><div><h3>Learn Anywhere</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing.</p></div></div>
+        <div><div><img src="pic-2.png" style="max-height: 100px; max-width: 100px;"></div><div><h3>Export Teachers</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p></div></div>
+        <div><div><img src="pic-3.png" style="max-height: 100px; max-width: 100px;"></div><div><h3>Unlimited Access</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing.</p></div></footer>
+    <div><center><button type="button"class="btn btn-success">Start Free Trial</button></center></div>
+    </div>
+    <hr>
+    <div class="container-fluid" id="tig3">
+        <header><div><img src="facebook.png" alt="" style="width:20px;height: 20px;"></div>
+        <div><img src="instagram.png" alt="" style="width:20px;height: 30px;padding-top: 10px;"></div>
+        <div><img src="twitter.png" alt="" style="width:20px;height: 30px;padding-top: 10px;"></div>
+        <div><img src="linkedin.png" alt="" style="width:20px;height: 30px;padding-top: 10px;"></div>
+       
+    
+        </header>
+        <div class="row" style="padding-left: 30px;" >
+            <div class="col-2"style="padding-top:80px;"><h2>Browse Our Top Courses</h2><p style="padding-top: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ex suscipit dolore tempore vel error, impedit quos optio nulla quidem esse, tenetur ad est sed rerum, et ullam earum adipisci?</p>
+            <div><button type="button" class="btn btn-warning">View All courses</button></div></div>
+            <div class="col-10"><center><div><img src="course.png" alt="" style="width: 950px;height:600px;float:right ;"></div></center></div>
+        </div>
+        <hr>
+        <div class="container-fluid" id="tig4">
+            <div class="row" style="padding-left: 40px;">
+                <div class="col-9"></div>
+                <div class="col-3" style="padding-top: 240px;"><h2>Limitless learning,limitless possibilities</h2>
+                <p style="padding-top: 30px;text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, iste perspiciatis tenetur dolore non ipsum doloremque, corrupti modi officiis veniam vero perferendis voluptate dolores blanditiis odio corporis ullam neque dicta.</p>
+            <div><button type="button" class="btn btn-success">Start Free Trial</button></div>
+            </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid" id="tig5">
+            <div class="row">
+                <div class="col-3"><form style="padding-top:230px"><h3>Sign up to join our learning community</h3>
+               <div> <label for="name"></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+                </div>
+                <div><label for="email"></label>
+                    <input type="email" placeholder="Enter Email" name="email" required></div>
+                <div> <label for="password"></label>
+                    <input type="password" placeholder="Enter Password" name="password" required></div>
+                    <div style="display:flex;justify-content: space-between;">
+                    <div style="padding-top:20px;"><button type="button" class="btn btn-danger" style="width:100%;">Sign up</button></div>
+                    <div style="padding-top:20px;"><button type="button" class="btn btn-danger" style="width:100%;">Start Free Trial</button></div>
+                    </div>
+                </form>
+                </div>
+                <div class="col-9"></div>
+            </div>
+        </div>
+        <hr>
+        <footer class="grid-container">
+            <div class="grid-item"><h5>Product</h5><p>our team<br>ordernow</p></div>
+            <div class="grid-item"><h5>About us</h5><p>Reputation<br>FAQs</p></div>
+            <div class="grid-item"><h5>Support</h5><p>Financial<br>Contact Us</p></div>
+            <div class="grid-item"><h5>Explore</h5><p>find a non-profit<br>corporate solutice</p></div>
+            <div class="grid-item"><h6>support@gmail.com</h6><h6>copyright 2024<a href="#">zoho</a></h6></div>
+            <div class="grid-item"><img src="logo.png" alt="" style="max-height: 80px;max-width: 80px;"><button type="button" class="btn btn-warning" style="width:50%;">English</button></div>
+        </footer>
+    </div>
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script>
+</body>
+</html>
